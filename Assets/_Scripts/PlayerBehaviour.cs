@@ -21,6 +21,9 @@ public class PlayerBehaviour : MonoBehaviour
     [Header("Character Controller")] 
     public CharacterController controller;
 
+    [Header("MiniMap")]
+    public GameObject minimap;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +52,11 @@ public class PlayerBehaviour : MonoBehaviour
         if (Input.GetButton("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravity);
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            minimap.SetActive(!minimap.activeInHierarchy);
         }
 
         // gravity
