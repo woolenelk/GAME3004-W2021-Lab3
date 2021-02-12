@@ -72,14 +72,14 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   colorFilter:
-    overrideState: 0
-    value: {r: 0.22941177, g: 0.48235294, b: 0.2372549, a: 1}
+    overrideState: 1
+    value: {r: 0.24003203, g: 0.34864324, b: 0.5849056, a: 1}
   hueShift:
     overrideState: 0
     value: 0
   saturation:
     overrideState: 1
-    value: 10
+    value: 100
   brightness:
     overrideState: 0
     value: 0
